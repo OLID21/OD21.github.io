@@ -2,14 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    position:relative;
 }
 
 .top{
     max-height: 70px;
     width: 100%;
     display: block; 
-    position: sticky;
+    position: fixed;
     display: inline-block;
+    overflow: hidden;
 }
 
 .logo {
@@ -74,7 +76,27 @@ h1 {
     font-weight: 300;
 }
 
+.rocket {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display:flexbox;
+}
 
+.rocket img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+  }
 
 footer{
     width: 100%;
@@ -97,7 +119,7 @@ footer{
     margin: 7px;
 }
 
-.linkedin a{
+.linkedin img{
     width: auto;
     min-width: 100%;
     min-height: 35px;
