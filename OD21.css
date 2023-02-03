@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     position:relative;
+    border: none;
+}
+
+body {
+    background-color: #44838b;
 }
 
 .top{
@@ -12,6 +17,7 @@
     position: fixed;
     display: inline-block;
     overflow: hidden;
+    z-index: 10;
 }
 
 .logo {
@@ -81,6 +87,10 @@ h1 {
     height: auto;
     box-sizing: border-box;
     display:flexbox;
+    text-align: center;
+    position: relative;
+    overflow:auto;
+    margin-bottom: 3rem !important;
 }
 
 .rocket img{
@@ -95,20 +105,31 @@ h1 {
     left: 16px;
     font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
     font-weight: 300;
   }
 
+.flight {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+}
+
+.flight img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
 footer{
-    width: 100%;
-    height: 3rem;
-    background-color:  #44838b;
-    position: absolute;
-    bottom: 0;
+
 }
 
 .linkedin {
-    max-height: 35px;
-    width: 35px;
+    max-height: 40px;
+    width: 40px;
     box-sizing: border-box;
     float: right;
     display: flex;
@@ -116,14 +137,11 @@ footer{
     align-items: center;
     padding: 5px 10px 5px 0px;
     align-content: center;
-    margin: 7px;
+    
 }
 
 .linkedin img{
-    width: auto;
-    min-width: 100%;
-    min-height: 35px;
-    object-fit: cover;
+
 }
 .twitter {
     float: right;
